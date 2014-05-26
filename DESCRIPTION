@@ -1,0 +1,22 @@
+Package: multistep
+Title: Utilities for running, timing and logging a multi-step process from R
+Version: 0.1
+Author: Sergei Izrailev, Jeremy Stanley
+Maintainer: Sergei Izrailev <sizrailev@collective.com>
+Description: A common pattern in modeling and data analysis is running complex,
+    primarily linear processes consisting of multiple steps.
+    The multistep package provides wrapper functionality abstracting
+    the timing and logging of these processes. It uses a relational
+    database to record the processes as well as is capable of splitting
+    standard output from the various steps in separate files. Conceptually,
+    each run of a multi-step process consists of stages, which, in turn,
+    consist of steps. The two-level hierarchy allows for logical groupings
+    of steps in stages, and provides minimal functionality for controlling
+    dependencies of stages on each other.
+URL: http://github.com/collectivemedia/multistep
+Depends:
+    R (>= 3.0.3),
+    cmrutils
+License: Apache License (== 2.0) | file LICENSE
+Copyright: file inst/COPYRIGHTS
+LazyData: true

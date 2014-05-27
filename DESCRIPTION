@@ -16,7 +16,9 @@ Description: A common pattern in modeling and data analysis is running complex,
 URL: http://github.com/collectivemedia/multistep
 Depends:
     R (>= 3.0.3),
-    cmrutils
+    cmrutils,
+    methods,
+    R.utils
 License: Apache License (== 2.0) | file LICENSE
 Copyright: file inst/COPYRIGHTS
 LazyData: true

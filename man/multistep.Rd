@@ -2,7 +2,7 @@
 \name{multistep}
 \alias{multistep}
 \alias{multistep-package}
-\title{Utilities for running, timing and logging a multi-step process from R.}
+\title{Utilities for running, timing and logging multi-step processes from R.}
 \description{
 \tabular{ll}{ Package: \tab multistep\cr Type: \tab
 Package\cr Version: \tab 0.1\cr Date: \tab 2014-05-26\cr

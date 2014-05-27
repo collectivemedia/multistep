@@ -21,7 +21,14 @@
 # limitations under the License.
 #-------------------------------------------------------------------------------
 
-#' Utilities for running, timing and logging a multi-step process from R.
+# An important design decision is to hide all details from the end-user, so
+# while the MultiStep class is used to store and check the state of the system,
+# the API does not expose any of its methods directly. This may eventually change.
+# The goal is to reduce the complexity to a bare minimum. 
+#
+# The current version is working with a singleton of the class.
+
+#' Utilities for running, timing and logging multi-step processes from R.
 #'
 #' \tabular{ll}{
 #' Package: \tab multistep\cr
@@ -37,4 +44,6 @@
 #' @name multistep
 #' @docType package
 #' @import cmrutils
+#' @import R.utils
+#' @import methods
 NULL
